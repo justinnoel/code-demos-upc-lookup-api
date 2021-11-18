@@ -1,0 +1,16 @@
+name = "upc-lookup-api"
+type = "javascript"
+account_id = "0b54413ee8be2adb60827633bb1779fc"
+workers_dev = true
+zone_id = "c1cdf2a8c7c0a77855745693e0b02150"
+compatibility_date = "2021-10-31"
+kv_namespaces = [
+  { binding = "UPC_LOOKUP_KV", id = "c65f2e5f63f14408912e08d44953886c", preview_id = "da5216fb8be94666b60bd8b363d04c15" },
+]
+
+route="upc-lookup-api.codedemos.dev/*"
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "service-worker"
